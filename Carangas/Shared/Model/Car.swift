@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Car {
+class Car: Codable {
     var _id: String?
     var brand: String = ""
     var name: String = ""
