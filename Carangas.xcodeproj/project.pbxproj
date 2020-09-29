@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		982090382523ECFB00B7B68F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982090372523ECFB00B7B68F /* Car.swift */; };
+		9820903B2523EDF300B7B68F /* CarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9820903A2523EDF300B7B68F /* CarAPI.swift */; };
 		A16BA8671F953B940045AD32 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BA8661F953B940045AD32 /* AddEditViewController.swift */; };
 		A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE11F92C57D00A25342 /* AppDelegate.swift */; };
 		A19C4BE41F92C57D00A25342 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE31F92C57D00A25342 /* CarViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		982090372523ECFB00B7B68F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		9820903A2523EDF300B7B68F /* CarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPI.swift; sourceTree = "<group>"; };
 		A16BA8661F953B940045AD32 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 		A19C4BDE1F92C57D00A25342 /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19C4BE11F92C57D00A25342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				982090372523ECFB00B7B68F /* Car.swift */,
+				9820903A2523EDF300B7B68F /* CarAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19C4BF81F92C99600A25342 /* CarsTableViewController.swift in Sources */,
+				9820903B2523EDF300B7B68F /* CarAPI.swift in Sources */,
 				A19C4BE41F92C57D00A25342 /* CarViewController.swift in Sources */,
 				982090382523ECFB00B7B68F /* Car.swift in Sources */,
 				A16BA8671F953B940045AD32 /* AddEditViewController.swift in Sources */,
