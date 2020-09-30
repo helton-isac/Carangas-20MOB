@@ -14,6 +14,7 @@ class CarsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshControl?.addTarget(self, action: #selector(loadCars), for: .valueChanged)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -21,8 +22,14 @@ class CarsTableViewController: UITableViewController {
         loadCars()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? CarViewController, let row = tableView.indexPathForSelectedRow?.row {
+            vc.car = cars[row]
+        }
+    }
+    
     // MARK: - Methods
-    private func loadCars() {
+    @objc private func loadCars() {
         
         // GEITO VIDA LOKA
 //        URLSession.shared.dataTask(with: URL(string: "https://carangas.herokuapp.com/cars")!) { (data, _, _) in
@@ -56,6 +63,9 @@ class CarsTableViewController: UITableViewController {
                     print("Task Error")
                 }
             }
+            DispatchQueue.main.sync {
+                self.refreshControl?.endRefreshing()
+            }
         }
     }
     
@@ -70,5 +80,23 @@ class CarsTableViewController: UITableViewController {
         cell.textLabel?.text = car.name
         cell.detailTextLabel?.text = car.brand
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let car = cars[indexPath.row]
+            CarAPI().deleteCar(car) { [weak self] (result) in
+                switch result {
+                case .success:
+                    self?.cars.remove(at: indexPath.row)
+                    DispatchQueue.main.async {
+                        tableView.deleteRows(at: [indexPath], with: .automatic)
+                    }
+                case .failure:
+                    print("Errou!!!")
+                }
+                
+            }
+        }
     }
 }
