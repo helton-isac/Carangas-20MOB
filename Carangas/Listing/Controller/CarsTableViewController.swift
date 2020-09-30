@@ -23,11 +23,43 @@ class CarsTableViewController: UITableViewController {
     
     // MARK: - Methods
     private func loadCars() {
-        CarAPI().loadCars()
+        
+        //GEITO VIDA LOKA
+//        URLSession.shared.dataTask(with: URL(string: "https://carangas.herokuapp.com/cars")!) { (data, _, _) in
+//            self.cars = try! JSONDecoder().decode([Car].self, from: data!)
+//            DispatchQueue.main.async {
+//                self.tableView.reloadData()
+//            }
+//        }.resume()
+        
+        CarAPI().loadCars { [weak self] (result) in
+            guard let self = self else { return }
+            switch result {
+            case .success(let cars):
+                self.cars = cars
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            case .failure(let apiError):
+                switch apiError {
+                case .badURL:
+                    print("Bad URL")
+                case .decodeError:
+                    print("Error Decoding Response")
+                case .invalidStatusCode(let statusCode):
+                    print("Invalid Status Code: \(statusCode)")
+                case .noData:
+                    print("No Data")
+                case .noResponse:
+                    print("No Response")
+                case .taskError:
+                    print("Task Error")
+                }
+            }
+        }
     }
     
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cars.count
     }
