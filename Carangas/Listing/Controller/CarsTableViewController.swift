@@ -24,7 +24,7 @@ class CarsTableViewController: UITableViewController {
     // MARK: - Methods
     private func loadCars() {
         
-        //GEITO VIDA LOKA
+        // GEITO VIDA LOKA
 //        URLSession.shared.dataTask(with: URL(string: "https://carangas.herokuapp.com/cars")!) { (data, _, _) in
 //            self.cars = try! JSONDecoder().decode([Car].self, from: data!)
 //            DispatchQueue.main.async {
