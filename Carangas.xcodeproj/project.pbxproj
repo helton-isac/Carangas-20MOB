@@ -16,6 +16,7 @@
 		980B9F8725390DD200C2E3C7 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B9F8625390DD200C2E3C7 /* CarTableViewCell.swift */; };
 		980B9F8A25390E3900C2E3C7 /* CarCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B9F8925390E3900C2E3C7 /* CarCellViewModel.swift */; };
 		980B9F8D253912F600C2E3C7 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B9F8C253912F600C2E3C7 /* Alert.swift */; };
+		980B9F90253917DD00C2E3C7 /* CarVisualizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980B9F8F253917DD00C2E3C7 /* CarVisualizationViewModel.swift */; };
 		A16BA8671F953B940045AD32 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BA8661F953B940045AD32 /* AddEditViewController.swift */; };
 		A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE11F92C57D00A25342 /* AppDelegate.swift */; };
 		A19C4BE41F92C57D00A25342 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE31F92C57D00A25342 /* CarViewController.swift */; };
@@ -35,6 +36,7 @@
 		980B9F8625390DD200C2E3C7 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
 		980B9F8925390E3900C2E3C7 /* CarCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellViewModel.swift; sourceTree = "<group>"; };
 		980B9F8C253912F600C2E3C7 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		980B9F8F253917DD00C2E3C7 /* CarVisualizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisualizationViewModel.swift; sourceTree = "<group>"; };
 		A16BA8661F953B940045AD32 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 		A19C4BDE1F92C57D00A25342 /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19C4BE11F92C57D00A25342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		980B9F772539072100C2E3C7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				980B9F8F253917DD00C2E3C7 /* CarVisualizationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				A16BA8671F953B940045AD32 /* AddEditViewController.swift in Sources */,
 				980B9F842539095E00C2E3C7 /* CarsListingViewModel.swift in Sources */,
 				980B9F8D253912F600C2E3C7 /* Alert.swift in Sources */,
+				980B9F90253917DD00C2E3C7 /* CarVisualizationViewModel.swift in Sources */,
 				A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

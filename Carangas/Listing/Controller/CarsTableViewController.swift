@@ -25,8 +25,9 @@ class CarsTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? CarViewController, let row = tableView.indexPathForSelectedRow?.row {
-            vc.car = cars[row]
+        if let vc = segue.destination as? CarViewController,
+           let indexPath = tableView.indexPathForSelectedRow {
+            vc.viewModel = viewModel.getCarVisualizationViewModelFor(indexPath)
         }
     }
     

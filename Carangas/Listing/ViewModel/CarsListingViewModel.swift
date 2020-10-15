@@ -55,4 +55,8 @@ class CarsListingViewModel {
             onComplete(result)
         }
     }
+    
+    func getCarVisualizationViewModelFor(_ indexPath: IndexPath) -> CarVisualizationViewModel {
+        CarVisualizationViewModel(car: getCar(at: indexPath))
+    }
 }
