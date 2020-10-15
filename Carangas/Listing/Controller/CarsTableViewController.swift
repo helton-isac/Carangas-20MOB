@@ -10,8 +10,8 @@ import UIKit
 class CarsTableViewController: UITableViewController {
     // MARK: - Properties
     var cars: [Car] = []
-    
-    
+
+    // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshControl?.addTarget(self, action: #selector(loadCars), for: .valueChanged)
@@ -31,16 +31,17 @@ class CarsTableViewController: UITableViewController {
     // MARK: - Methods
     @objc private func loadCars() {
         
-        // GEITO VIDA LOKA
-//        URLSession.shared.dataTask(with: URL(string: "https://carangas.herokuapp.com/cars")!) { (data, _, _) in
-//            self.cars = try! JSONDecoder().decode([Car].self, from: data!)
-//            DispatchQueue.main.async {
-//                self.tableView.reloadData()
-//            }
-//        }.resume()
+        //GEITO VIDA LOKA
+        /*
+        URLSession.shared.dataTask(with: URL(string: "https://carangas.herokuapp.com/cars")!) { (data, _, _) in
+            self.cars = try! JSONDecoder().decode([Car].self, from: data!)
+            DispatchQueue.main.async {self.tableView.reloadData()}
+        }.resume()
+        */
         
+
         CarAPI().loadCars { [weak self] (result) in
-            guard let self = self else { return }
+            guard let self = self else {return}
             switch result {
             case .success(let cars):
                 self.cars = cars
@@ -50,20 +51,12 @@ class CarsTableViewController: UITableViewController {
             case .failure(let apiError):
                 switch apiError {
                 case .badURL:
-                    print("Bad URL")
-                case .decodeError:
-                    print("Error Decoding Response")
-                case .invalidStatusCode(let statusCode):
-                    print("Invalid Status Code: \(statusCode)")
-                case .noData:
-                    print("No Data")
-                case .noResponse:
-                    print("No Response")
-                case .taskError:
-                    print("Task Error")
+                    print("URL inválida")
+                default:
+                    print("Outro cenário de erro")
                 }
             }
-            DispatchQueue.main.sync {
+            DispatchQueue.main.async {
                 self.refreshControl?.endRefreshing()
             }
         }
@@ -93,9 +86,8 @@ class CarsTableViewController: UITableViewController {
                         tableView.deleteRows(at: [indexPath], with: .automatic)
                     }
                 case .failure:
-                    print("Errou!!!")
+                    print("Errrroooooooooou!!!")
                 }
-                
             }
         }
     }

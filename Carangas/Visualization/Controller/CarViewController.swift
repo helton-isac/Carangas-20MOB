@@ -13,7 +13,6 @@ class CarViewController: UIViewController {
     @IBOutlet weak var lbBrand: UILabel!
     @IBOutlet weak var lbGasType: UILabel!
     @IBOutlet weak var lbPrice: UILabel!
-    @IBOutlet weak var loading: UIActivityIndicatorView!
     
     // MARK: - Properties
     var car: Car!
@@ -23,7 +22,7 @@ class CarViewController: UIViewController {
         numberFormatter.locale = Locale(identifier: "pt_BR")
         return numberFormatter
     }()
-    
+
     // MARK: - Super Methods
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

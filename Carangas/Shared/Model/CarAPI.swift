@@ -17,6 +17,7 @@ enum APIError: Error {
     case decodeError
 }
 
+
 class CarAPI {
     
     private let basePath = "https://carangas.herokuapp.com/cars"
@@ -31,11 +32,12 @@ class CarAPI {
     
     private lazy var session = URLSession(configuration: configuration)
     
-    func loadCars(onComplete: @escaping(Result<[Car], APIError>) -> Void) {
+    func loadCars(onComplete: @escaping (Result<[Car], APIError>) -> Void) {
         guard let url = URL(string: basePath) else {
             onComplete(.failure(.badURL))
             return
         }
+        
         let task = session.dataTask(with: url) { (data, response, error) in
             if let _ = error {
                 onComplete(.failure(.taskError))
@@ -63,24 +65,21 @@ class CarAPI {
         task.resume()
     }
     
-    func deleteCar(_ car: Car, onComplete: @escaping(Result<Void, APIError>) -> Void) {
+    func deleteCar(_ car: Car, onComplete: @escaping (Result<Void, APIError>) -> Void) {
         request("DELETE", car: car, onComplete: onComplete)
     }
     
-    func updateCar(_ car: Car, onComplete: @escaping(Result<Void, APIError>) -> Void) {
+    func updateCar(_ car: Car, onComplete: @escaping (Result<Void, APIError>) -> Void) {
         request("PUT", car: car, onComplete: onComplete)
     }
     
-    func createCar(_ car: Car, onComplete: @escaping(Result<Void, APIError>) -> Void) {
+    func createCar(_ car: Car, onComplete: @escaping (Result<Void, APIError>) -> Void) {
         request("POST", car: car, onComplete: onComplete)
     }
     
-    private func request(_ httpMethod: String, car: Car, onComplete: @escaping(Result<Void, APIError>) -> Void) {
+    private func request(_ httpMethod: String, car: Car, onComplete: @escaping (Result<Void, APIError>) -> Void) {
         let urlString = basePath + "/" + (car._id ?? "")
-        guard let url = URL(string: urlString) else {
-            onComplete(.failure(.badURL))
-            return
-        }
+        let url = URL(string: urlString)!
         
         var urlRequest = URLRequest(url: url)
         urlRequest.httpBody = try? JSONEncoder().encode(car)
@@ -95,3 +94,4 @@ class CarAPI {
         }.resume()
     }
 }
+

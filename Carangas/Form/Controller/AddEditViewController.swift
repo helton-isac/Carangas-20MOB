@@ -8,7 +8,7 @@
 import UIKit
 
 class AddEditViewController: UIViewController {
-    
+
     // MARK: - IBOutlets
     @IBOutlet weak var tfBrand: UITextField!
     @IBOutlet weak var tfName: UITextField!
@@ -29,37 +29,37 @@ class AddEditViewController: UIViewController {
             tfPrice.text = "\(car.price)"
             tfBrand.text = car.brand
             scGasType.selectedSegmentIndex = car.gasType
-            btAddEdit.setTitle("Alterar Carro", for: .normal)
+            btAddEdit.setTitle("Alterar carro", for: .normal)
             title = "Alteração"
         }
     }
     
     // MARK: - IBActions
     @IBAction func addEdit(_ sender: UIButton) {
-        
         if car == nil {
             car = Car()
         }
-        
         car.brand = tfBrand.text!
         car.name = tfName.text!
         car.gasType = scGasType.selectedSegmentIndex
         car.price = Int(tfPrice.text!) ?? 0
         
         if car._id == nil {
-            CarAPI().createCar(car) { [weak self](_) in
+            CarAPI().createCar(car) { [weak self] (_) in
                 self?.goBack()
             }
         } else {
-            CarAPI().updateCar(car) { [weak self](_) in
+            CarAPI().updateCar(car) { [weak self] (_) in
                 self?.goBack()
             }
         }
     }
     
+    // MARK: - Methods
     private func goBack() {
         DispatchQueue.main.async {
             self.navigationController?.popViewController(animated: true)
         }
+        
     }
 }
