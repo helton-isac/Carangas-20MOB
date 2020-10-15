@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2297F6162523ECEE00F89427 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F6152523ECEE00F89427 /* Car.swift */; };
 		2297F6182523EDE800F89427 /* CarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F6172523EDE800F89427 /* CarAPI.swift */; };
+		980B9F7B2539079200C2E3C7 /* Listing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980B9F7A2539079200C2E3C7 /* Listing.storyboard */; };
+		980B9F7E253907DD00C2E3C7 /* Form.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980B9F7D253907DD00C2E3C7 /* Form.storyboard */; };
+		980B9F812539081B00C2E3C7 /* Visualization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980B9F802539081B00C2E3C7 /* Visualization.storyboard */; };
 		A16BA8671F953B940045AD32 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BA8661F953B940045AD32 /* AddEditViewController.swift */; };
 		A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE11F92C57D00A25342 /* AppDelegate.swift */; };
 		A19C4BE41F92C57D00A25342 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE31F92C57D00A25342 /* CarViewController.swift */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		2297F6152523ECEE00F89427 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		2297F6172523EDE800F89427 /* CarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPI.swift; sourceTree = "<group>"; };
+		980B9F7A2539079200C2E3C7 /* Listing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Listing.storyboard; sourceTree = "<group>"; };
+		980B9F7D253907DD00C2E3C7 /* Form.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Form.storyboard; sourceTree = "<group>"; };
+		980B9F802539081B00C2E3C7 /* Visualization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Visualization.storyboard; sourceTree = "<group>"; };
 		A16BA8661F953B940045AD32 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 		A19C4BDE1F92C57D00A25342 /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19C4BE11F92C57D00A25342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +52,8 @@
 		2297F60A2523E4E300F89427 /* Visualization */ = {
 			isa = PBXGroup;
 			children = (
+				980B9F772539072100C2E3C7 /* ViewModel */,
+				980B9F752539071400C2E3C7 /* View */,
 				2297F60B2523E51F00F89427 /* Controller */,
 			);
 			path = Visualization;
@@ -78,6 +86,8 @@
 		2297F60E2523E53B00F89427 /* Listing */ = {
 			isa = PBXGroup;
 			children = (
+				980B9F74253906F700C2E3C7 /* ViewModel */,
+				980B9F73253906ED00C2E3C7 /* View */,
 				2297F60F2523E54100F89427 /* Controller */,
 			);
 			path = Listing;
@@ -94,6 +104,8 @@
 		2297F6102523E54B00F89427 /* Form */ = {
 			isa = PBXGroup;
 			children = (
+				980B9F782539072D00C2E3C7 /* ViewModel */,
+				980B9F762539071C00C2E3C7 /* View */,
 				2297F6112523E55000F89427 /* Controller */,
 			);
 			path = Form;
@@ -134,6 +146,51 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		980B9F73253906ED00C2E3C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				980B9F7A2539079200C2E3C7 /* Listing.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		980B9F74253906F700C2E3C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		980B9F752539071400C2E3C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				980B9F802539081B00C2E3C7 /* Visualization.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		980B9F762539071C00C2E3C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				980B9F7D253907DD00C2E3C7 /* Form.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		980B9F772539072100C2E3C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		980B9F782539072D00C2E3C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A19C4BD51F92C57D00A25342 = {
 			isa = PBXGroup;
 			children = (
@@ -153,12 +210,12 @@
 		A19C4BE01F92C57D00A25342 /* Carangas */ = {
 			isa = PBXGroup;
 			children = (
-				2297F6132523ECD500F89427 /* Shared */,
+				A19C4BE51F92C57D00A25342 /* Main.storyboard */,
 				2297F60C2523E53100F89427 /* Main */,
 				2297F60E2523E53B00F89427 /* Listing */,
 				2297F60A2523E4E300F89427 /* Visualization */,
 				2297F6102523E54B00F89427 /* Form */,
-				A19C4BE51F92C57D00A25342 /* Main.storyboard */,
+				2297F6132523ECD500F89427 /* Shared */,
 				2297F6122523E56300F89427 /* Supporting Files */,
 			);
 			path = Carangas;
@@ -225,8 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19C4BEC1F92C57D00A25342 /* LaunchScreen.storyboard in Resources */,
+				980B9F7E253907DD00C2E3C7 /* Form.storyboard in Resources */,
 				A19C4BE91F92C57D00A25342 /* Assets.xcassets in Resources */,
 				A19C4BE71F92C57D00A25342 /* Main.storyboard in Resources */,
+				980B9F7B2539079200C2E3C7 /* Listing.storyboard in Resources */,
+				980B9F812539081B00C2E3C7 /* Visualization.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
