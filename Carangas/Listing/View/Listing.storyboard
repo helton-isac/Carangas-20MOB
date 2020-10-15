@@ -21,7 +21,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="lHo-LX-5De" detailTextLabel="w34-9R-LRm" style="IBUITableViewCellStyleValue1" id="qyo-hO-rWn">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="lHo-LX-5De" detailTextLabel="w34-9R-LRm" style="IBUITableViewCellStyleValue1" id="qyo-hO-rWn" customClass="CarTableViewCell" customModule="Carangas" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qyo-hO-rWn" id="sfg-Ea-ZVQ">
@@ -87,7 +87,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fbs-0T-nzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1317" y="130"/>
+            <point key="canvasLocation" x="1245" y="91"/>
         </scene>
         <!--Visualization-->
         <scene sceneID="gHt-b2-xhZ">
@@ -97,7 +97,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsp-sO-Tdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351" y="164"/>
+            <point key="canvasLocation" x="1278" y="202"/>
         </scene>
     </scenes>
 </document>
