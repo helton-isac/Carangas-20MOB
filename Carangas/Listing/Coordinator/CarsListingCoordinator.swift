@@ -27,9 +27,12 @@ class CarsListingCoordinator: Coordinator {
 
 extension CarsListingCoordinator : CarPresenter {
     func showCarWith(viewModel: CarVisualizationViewModel) {
-        let viewController = CarVisualizationViewController.instantiateFromStoryboard(.visualization)
-        viewController.viewModel = viewModel
-        navigationController.pushViewController(viewController, animated: true)
+        let childCoordinator = CarVisualizationCoordinator(
+            navigationController: navigationController,
+            carVisualizationViewModel: viewModel)
+        childCoordinator.parentCoordinators = self
+        childCoordinators.append(childCoordinator)
+        childCoordinator.start()
     }
 }
 

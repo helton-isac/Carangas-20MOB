@@ -16,6 +16,7 @@ class CarVisualizationViewController: UIViewController {
     
     // MARK: - Properties
     var viewModel: CarVisualizationViewModel?
+    var coordinator: CarVisualizationCoordinator?
     
     // MARK: - Super Methods
     override func viewWillAppear(_ animated: Bool) {

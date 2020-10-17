@@ -13,12 +13,17 @@ class CarVisualizationCoordinator: Coordinator {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
     var parentCoordinators: Coordinator?
+    var carVisualizationViewModel: CarVisualizationViewModel
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, carVisualizationViewModel: CarVisualizationViewModel) {
         self.navigationController = navigationController
+        self.carVisualizationViewModel = carVisualizationViewModel
     }
     
     func start() {
-        
+        let viewController = CarVisualizationViewController.instantiateFromStoryboard(.visualization)
+        viewController.viewModel = carVisualizationViewModel
+        viewController.coordinator = self
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
