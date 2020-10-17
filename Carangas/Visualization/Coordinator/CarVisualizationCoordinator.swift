@@ -19,7 +19,7 @@ class CarVisualizationCoordinator: Coordinator {
         self.navigationController = navigationController
         self.carVisualizationViewModel = carVisualizationViewModel
     }
-    
+    
     func start() {
         let viewController = CarVisualizationViewController.instantiateFromStoryboard(.visualization)
         viewController.viewModel = carVisualizationViewModel

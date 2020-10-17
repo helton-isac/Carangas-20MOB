@@ -59,6 +59,11 @@ class CarFormViewController: UIViewController {
             }
         }
     }
+    
+    deinit {
+        print("CarFormViewController -> deinit")
+        coordinator?.childDidFinish(nil)
+    }
 }
 
 extension CarFormViewController: CarFormViewModelDelegate {

@@ -26,4 +26,8 @@ class CarFormCoordinator: Coordinator {
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: true)
     }
+    
+    func childDidFinish(_ child: Coordinator?) {
+        parentCoordinators?.childDidFinish(self)
+    }
 }
