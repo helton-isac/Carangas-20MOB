@@ -38,6 +38,11 @@ extension CarsListingCoordinator : CarPresenter {
 
 extension CarsListingCoordinator : CarCreator {
     func createCar(viewModel: CarFormViewModel = CarFormViewModel()) {
-
+        let childCoordinator = CarFormCoordinator(
+            navigationController: navigationController,
+            carFormViewModel: viewModel)
+        childCoordinator.parentCoordinators = self
+        childCoordinators.append(childCoordinator)
+        childCoordinator.start()
     }
 }

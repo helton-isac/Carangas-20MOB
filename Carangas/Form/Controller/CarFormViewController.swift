@@ -19,6 +19,8 @@ class CarFormViewController: UIViewController {
     
     // MARK: - Properties
     var viewModel: CarFormViewModel?
+    weak var coordinator: CarFormCoordinator?
+    
     
     // MARK: - Super Methods
     override func viewDidLoad() {
