@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CarViewController: UIViewController {
+class CarVisualizationViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var lbBrand: UILabel!

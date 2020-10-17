@@ -12,7 +12,7 @@
         <!--Caranga-->
         <scene sceneID="Jgc-sf-Gag">
             <objects>
-                <viewController storyboardIdentifier="CarViewController" id="sgV-b4-M3W" customClass="CarViewController" customModule="Carangas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CarVisualizationViewController" id="sgV-b4-M3W" customClass="CarVisualizationViewController" customModule="Carangas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O9Y-Om-VPW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

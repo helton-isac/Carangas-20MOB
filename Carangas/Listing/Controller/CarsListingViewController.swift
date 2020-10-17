@@ -7,11 +7,21 @@
 
 import UIKit
 
-class CarsTableViewController: UITableViewController {
+protocol CarPresenter: AnyObject {
+    func showCarWith(viewModel: CarVisualizationViewModel)
+}
+
+protocol CarCreator: AnyObject {
+    func createCar(viewModel: CarFormViewModel)
+}
+
+typealias CarEnabled = Coordinator & CarPresenter & CarCreator
+
+class CarsListingViewController: UITableViewController {
     
     // MARK: - Properties
     var viewModel = CarsListingViewModel()
-    weak var coordinator: CarsListingCoordinator?
+    weak var coordinator: CarEnabled?
     
     // MARK: - Super Methods
     override func viewDidLoad() {
@@ -25,13 +35,9 @@ class CarsTableViewController: UITableViewController {
         loadCars()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.destination {
-        case let carFormViewController as CarFormViewController:
-            carFormViewController.viewModel = CarFormViewModel()
-        default:
-            break
-        }
+    // MARK: - Action
+    @IBAction func createCar(_ sender: UIBarButtonItem) {
+        coordinator?.createCar(viewModel: CarFormViewModel())
     }
     
     // MARK: - Methods
