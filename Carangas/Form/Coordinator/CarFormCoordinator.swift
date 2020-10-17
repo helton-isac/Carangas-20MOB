@@ -13,12 +13,16 @@ class CarFormCoordinator: Coordinator {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
     var parentCoordinators: Coordinator?
+    let carFormViewModel: CarFormViewModel
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, carFormViewModel: CarFormViewModel = CarFormViewModel()) {
         self.navigationController = navigationController
+        self.carFormViewModel = carFormViewModel   
     }
     
     func start() {
-        
+        let viewController = CarFormViewController.instantiateFromStoryboard(.form)
+        viewController.viewModel = carFormViewModel
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

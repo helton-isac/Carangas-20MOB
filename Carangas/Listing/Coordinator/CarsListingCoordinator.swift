@@ -38,8 +38,6 @@ extension CarsListingCoordinator : CarPresenter {
 
 extension CarsListingCoordinator : CarCreator {
     func createCar(viewModel: CarFormViewModel = CarFormViewModel()) {
-        let viewController = CarFormViewController.instantiateFromStoryboard(.form)
-        viewController.viewModel = viewModel
-        navigationController.pushViewController(viewController, animated: true)
+
     }
 }
