@@ -25,6 +25,7 @@
 		98951625253B1C7200A17399 /* UIViewController+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98951624253B1C7200A17399 /* UIViewController+Instantiate.swift */; };
 		98951628253B1D9F00A17399 /* UIStoryboard+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98951627253B1D9F00A17399 /* UIStoryboard+Names.swift */; };
 		9895162E253B2E1B00A17399 /* CarVisualizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895162D253B2E1B00A17399 /* CarVisualizationCoordinator.swift */; };
+		98951632253B305F00A17399 /* CarFormCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98951631253B305F00A17399 /* CarFormCoordinator.swift */; };
 		A16BA8671F953B940045AD32 /* CarFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BA8661F953B940045AD32 /* CarFormViewController.swift */; };
 		A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE11F92C57D00A25342 /* AppDelegate.swift */; };
 		A19C4BE41F92C57D00A25342 /* CarVisualizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE31F92C57D00A25342 /* CarVisualizationViewController.swift */; };
@@ -52,6 +53,7 @@
 		98951624253B1C7200A17399 /* UIViewController+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiate.swift"; sourceTree = "<group>"; };
 		98951627253B1D9F00A17399 /* UIStoryboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Names.swift"; sourceTree = "<group>"; };
 		9895162D253B2E1B00A17399 /* CarVisualizationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisualizationCoordinator.swift; sourceTree = "<group>"; };
+		98951631253B305F00A17399 /* CarFormCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFormCoordinator.swift; sourceTree = "<group>"; };
 		A16BA8661F953B940045AD32 /* CarFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFormViewController.swift; sourceTree = "<group>"; };
 		A19C4BDE1F92C57D00A25342 /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19C4BE11F92C57D00A25342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		2297F6102523E54B00F89427 /* Form */ = {
 			isa = PBXGroup;
 			children = (
+				98951630253B304E00A17399 /* Coordinator */,
 				980B9F782539072D00C2E3C7 /* ViewModel */,
 				980B9F762539071C00C2E3C7 /* View */,
 				2297F6112523E55000F89427 /* Controller */,
@@ -268,6 +271,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		98951630253B304E00A17399 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				98951631253B305F00A17399 /* CarFormCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		A19C4BD51F92C57D00A25342 = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +388,7 @@
 				98951625253B1C7200A17399 /* UIViewController+Instantiate.swift in Sources */,
 				980B9F8725390DD200C2E3C7 /* CarTableViewCell.swift in Sources */,
 				A19C4BE41F92C57D00A25342 /* CarVisualizationViewController.swift in Sources */,
+				98951632253B305F00A17399 /* CarFormCoordinator.swift in Sources */,
 				9895162E253B2E1B00A17399 /* CarVisualizationCoordinator.swift in Sources */,
 				980B9F8A25390E3900C2E3C7 /* CarCellViewModel.swift in Sources */,
 				2297F6162523ECEE00F89427 /* Car.swift in Sources */,
