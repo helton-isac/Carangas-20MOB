@@ -19,6 +19,7 @@ class CarsListingCoordinator: Coordinator {
     }
     
     func start() {
-        
+        let viewController = CarsTableViewController.instantiateFromStoryboard(.listing)
+        navigationController.pushViewController(viewController, animated: false)
     }
 }
