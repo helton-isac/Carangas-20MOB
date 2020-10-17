@@ -12,7 +12,7 @@ class CarVisualizationCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    var parentCoordinators: Coordinator?
+    var parentCoordinator: Coordinator?
     var carVisualizationViewModel: CarVisualizationViewModel
     
     init(navigationController: UINavigationController, carVisualizationViewModel: CarVisualizationViewModel) {
@@ -27,8 +27,19 @@ class CarVisualizationCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    func editCar(viewModel: CarFormViewModel) {
+        let childCoordinator = CarFormCoordinator(navigationController: navigationController, carFormViewModel: viewModel)
+        childCoordinator.parentCoordinator = self
+        add(childCoordinator: childCoordinator)
+        childCoordinator.start()
+    }
+    
     func childDidFinish(_ child: Coordinator?) {
-        parentCoordinators?.childDidFinish(self)
+        if let child = child {
+            remove(childCoordinator: child)
+        } else {
+            parentCoordinator?.childDidFinish(self)
+        }
     }
     
     deinit {

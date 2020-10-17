@@ -12,7 +12,7 @@ class CarsListingCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    var parentCoordinators: Coordinator?
+    var parentCoordinator: Coordinator?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -25,24 +25,20 @@ class CarsListingCoordinator: Coordinator {
     }
 }
 
-extension CarsListingCoordinator : CarPresenter {
+extension CarsListingCoordinator: CarPresenter {
     func showCarWith(viewModel: CarVisualizationViewModel) {
-        let childCoordinator = CarVisualizationCoordinator(
-            navigationController: navigationController,
-            carVisualizationViewModel: viewModel)
-        childCoordinator.parentCoordinators = self
-        childCoordinators.append(childCoordinator)
+        let childCoordinator = CarVisualizationCoordinator(navigationController: navigationController, carVisualizationViewModel: viewModel)
+        childCoordinator.parentCoordinator = self
+        add(childCoordinator: childCoordinator)
         childCoordinator.start()
     }
 }
 
-extension CarsListingCoordinator : CarCreator {
+extension CarsListingCoordinator: CarCreator {
     func createCar(viewModel: CarFormViewModel = CarFormViewModel()) {
-        let childCoordinator = CarFormCoordinator(
-            navigationController: navigationController,
-            carFormViewModel: viewModel)
-        childCoordinator.parentCoordinators = self
-        childCoordinators.append(childCoordinator)
+        let childCoordinator = CarFormCoordinator(navigationController: navigationController, carFormViewModel: viewModel)
+        childCoordinator.parentCoordinator = self
+        add(childCoordinator: childCoordinator)
         childCoordinator.start()
     }
 }

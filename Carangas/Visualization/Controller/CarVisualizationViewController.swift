@@ -37,7 +37,7 @@ class CarVisualizationViewController: UIViewController {
     
     @IBAction func editCar(_ sender: UIBarButtonItem) {
         guard let viewModel = viewModel else { return }
-        coordinator.editCar(viewModel: viewModel.getCarFormViewModel())
+        coordinator?.editCar(viewModel: viewModel.getCarFormViewModel())
     }
     
     deinit {

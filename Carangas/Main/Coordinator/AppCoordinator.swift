@@ -12,7 +12,7 @@ class AppCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    var parentCoordinators: Coordinator?
+    var parentCoordinator: Coordinator?
     
     init() {
         navigationController = UINavigationController()
@@ -22,8 +22,10 @@ class AppCoordinator: Coordinator {
     
     func start() {
         let childCoordinator = CarsListingCoordinator(navigationController: navigationController)
-        childCoordinator.parentCoordinators = self
-        childCoordinators.append(childCoordinator)
+        childCoordinator.parentCoordinator = self
+        add(childCoordinator: childCoordinator)
         childCoordinator.start()
     }
+    
+    
 }

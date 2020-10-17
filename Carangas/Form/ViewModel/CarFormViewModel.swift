@@ -72,21 +72,3 @@ class CarFormViewModel {
     }
 }
 
-
-//if car == nil {
-//    car = Car()
-//}
-//car.brand = tfBrand.text!
-//car.name = tfName.text!
-//car.gasType = scGasType.selectedSegmentIndex
-//car.price = Int(tfPrice.text!) ?? 0
-//
-//if car._id == nil {
-//    CarAPI().createCar(car) { [weak self] (_) in
-//        self?.goBack()
-//    }
-//} else {
-//    CarAPI().updateCar(car) { [weak self] (_) in
-//        self?.goBack()
-//    }
-//}

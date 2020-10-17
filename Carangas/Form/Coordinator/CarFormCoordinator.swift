@@ -12,12 +12,12 @@ class CarFormCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    var parentCoordinators: Coordinator?
+    var parentCoordinator: Coordinator?
     let carFormViewModel: CarFormViewModel
     
     init(navigationController: UINavigationController, carFormViewModel: CarFormViewModel = CarFormViewModel()) {
         self.navigationController = navigationController
-        self.carFormViewModel = carFormViewModel   
+        self.carFormViewModel = carFormViewModel
     }
     
     func start() {
@@ -28,6 +28,10 @@ class CarFormCoordinator: Coordinator {
     }
     
     func childDidFinish(_ child: Coordinator?) {
-        parentCoordinators?.childDidFinish(self)
+        parentCoordinator?.childDidFinish(self)
+    }
+    
+    deinit {
+        print("CarFormCoordinator -> deinit")
     }
 }

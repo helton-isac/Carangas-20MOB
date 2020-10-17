@@ -11,8 +11,8 @@ import UIKit
 protocol Coordinator: AnyObject {
     
     var navigationController: UINavigationController {get set}
-    var childCoordinators: [Coordinator]  {get set}
-    var parentCoordinators: Coordinator?  {get set}
+    var childCoordinators: [Coordinator] {get set}
+    var parentCoordinator: Coordinator? {get set}
     
     func start()
     func add(childCoordinator coordinator: Coordinator)
@@ -26,11 +26,10 @@ extension Coordinator {
     }
     
     func remove(childCoordinator coordinator: Coordinator) {
-        childCoordinators = childCoordinators.filter { $0 !== coordinator }
+        childCoordinators = childCoordinators.filter{$0 !== coordinator}
     }
-    
     func childDidFinish(_ child: Coordinator?) {
-        guard let child = child else { return }
-        parentCoordinators?.remove(childCoordinator: child)
+        guard let child = child else {return}
+        remove(childCoordinator: child)
     }
 }

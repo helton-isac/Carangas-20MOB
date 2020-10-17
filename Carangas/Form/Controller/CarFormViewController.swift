@@ -51,8 +51,8 @@ class CarFormViewController: UIViewController {
     
     private func checkResult(_ result: Result<Void, APIError>, withError message: String) {
         DispatchQueue.main.async {
-            switch result{
-            case .success():
+            switch result {
+            case .success:
                 self.navigationController?.popViewController(animated: true)
             case .failure(let apiError):
                 Alert.show(title: "Erro", message: "\(message) \(apiError.errorMessage)", presenter: self)
