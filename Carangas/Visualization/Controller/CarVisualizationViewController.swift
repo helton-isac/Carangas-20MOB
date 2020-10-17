@@ -34,4 +34,9 @@ class CarVisualizationViewController: UIViewController {
             vc.viewModel = viewModel?.getCarFormViewModel()
         }
     }
+    
+    deinit {
+        print("CarVisualizationViewController -> deinit")
+        coordinator?.childDidFinish(nil)
+    }
 }

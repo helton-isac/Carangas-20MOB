@@ -19,11 +19,19 @@ class CarVisualizationCoordinator: Coordinator {
         self.navigationController = navigationController
         self.carVisualizationViewModel = carVisualizationViewModel
     }
-    
+    
     func start() {
         let viewController = CarVisualizationViewController.instantiateFromStoryboard(.visualization)
         viewController.viewModel = carVisualizationViewModel
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func childDidFinish(_ child: Coordinator?) {
+        parentCoordinators?.childDidFinish(self)
+    }
+    
+    deinit {
+        print("CarVisualizationCoordinator -> deinit")
     }
 }
