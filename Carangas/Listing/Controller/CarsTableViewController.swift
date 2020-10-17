@@ -11,6 +11,7 @@ class CarsTableViewController: UITableViewController {
     
     // MARK: - Properties
     var viewModel = CarsListingViewModel()
+    weak var coordinator: CarsListingCoordinator?
     
     // MARK: - Super Methods
     override func viewDidLoad() {
@@ -26,9 +27,6 @@ class CarsTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.destination {
-        case let carViewController as CarViewController:
-            guard let indexPath = tableView.indexPathForSelectedRow else {return}
-            carViewController.viewModel = viewModel.getCarVisualizationViewModelFor(indexPath)
         case let carFormViewController as CarFormViewController:
             carFormViewController.viewModel = CarFormViewModel()
         default:
@@ -76,5 +74,10 @@ class CarsTableViewController: UITableViewController {
                 }
             }
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let carVisualizationViewModel = viewModel.getCarVisualizationViewModelFor(indexPath)
+        coordinator?.showCarWith(viewModel: carVisualizationViewModel)
     }
 }
