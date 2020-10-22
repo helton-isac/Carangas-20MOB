@@ -26,6 +26,7 @@
 		98951628253B1D9F00A17399 /* UIStoryboard+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98951627253B1D9F00A17399 /* UIStoryboard+Names.swift */; };
 		9895162E253B2E1B00A17399 /* CarVisualizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895162D253B2E1B00A17399 /* CarVisualizationCoordinator.swift */; };
 		98951632253B305F00A17399 /* CarFormCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98951631253B305F00A17399 /* CarFormCoordinator.swift */; };
+		98CCBDBB2542470A00B3E7C0 /* CarangasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CCBDBA2542470A00B3E7C0 /* CarangasTests.swift */; };
 		A16BA8671F953B940045AD32 /* CarFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BA8661F953B940045AD32 /* CarFormViewController.swift */; };
 		A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE11F92C57D00A25342 /* AppDelegate.swift */; };
 		A19C4BE41F92C57D00A25342 /* CarVisualizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE31F92C57D00A25342 /* CarVisualizationViewController.swift */; };
@@ -33,6 +34,16 @@
 		A19C4BEC1F92C57D00A25342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C4BEA1F92C57D00A25342 /* LaunchScreen.storyboard */; };
 		A19C4BF81F92C99600A25342 /* CarsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BF71F92C99600A25342 /* CarsListingViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98CCBDBD2542470A00B3E7C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19C4BD61F92C57D00A25342 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19C4BDD1F92C57D00A25342;
+			remoteInfo = Carangas;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2297F6152523ECEE00F89427 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -54,6 +65,9 @@
 		98951627253B1D9F00A17399 /* UIStoryboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Names.swift"; sourceTree = "<group>"; };
 		9895162D253B2E1B00A17399 /* CarVisualizationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisualizationCoordinator.swift; sourceTree = "<group>"; };
 		98951631253B305F00A17399 /* CarFormCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFormCoordinator.swift; sourceTree = "<group>"; };
+		98CCBDB82542470A00B3E7C0 /* CarangasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarangasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CCBDBA2542470A00B3E7C0 /* CarangasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarangasTests.swift; sourceTree = "<group>"; };
+		98CCBDBC2542470A00B3E7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A16BA8661F953B940045AD32 /* CarFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFormViewController.swift; sourceTree = "<group>"; };
 		A19C4BDE1F92C57D00A25342 /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19C4BE11F92C57D00A25342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +79,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		98CCBDB52542470A00B3E7C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A19C4BDB1F92C57D00A25342 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,10 +300,20 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		98CCBDB92542470A00B3E7C0 /* CarangasTests */ = {
+			isa = PBXGroup;
+			children = (
+				98CCBDBA2542470A00B3E7C0 /* CarangasTests.swift */,
+				98CCBDBC2542470A00B3E7C0 /* Info.plist */,
+			);
+			path = CarangasTests;
+			sourceTree = "<group>";
+		};
 		A19C4BD51F92C57D00A25342 = {
 			isa = PBXGroup;
 			children = (
 				A19C4BE01F92C57D00A25342 /* Carangas */,
+				98CCBDB92542470A00B3E7C0 /* CarangasTests */,
 				A19C4BDF1F92C57D00A25342 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -291,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				A19C4BDE1F92C57D00A25342 /* Carangas.app */,
+				98CCBDB82542470A00B3E7C0 /* CarangasTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,6 +343,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		98CCBDB72542470A00B3E7C0 /* CarangasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CCBDC12542470A00B3E7C0 /* Build configuration list for PBXNativeTarget "CarangasTests" */;
+			buildPhases = (
+				98CCBDB42542470A00B3E7C0 /* Sources */,
+				98CCBDB52542470A00B3E7C0 /* Frameworks */,
+				98CCBDB62542470A00B3E7C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98CCBDBE2542470A00B3E7C0 /* PBXTargetDependency */,
+			);
+			name = CarangasTests;
+			productName = CarangasTests;
+			productReference = 98CCBDB82542470A00B3E7C0 /* CarangasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A19C4BDD1F92C57D00A25342 /* Carangas */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19C4BF01F92C57D00A25342 /* Build configuration list for PBXNativeTarget "Carangas" */;
@@ -334,10 +384,15 @@
 		A19C4BD61F92C57D00A25342 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Eric Brito";
 				TargetAttributes = {
+					98CCBDB72542470A00B3E7C0 = {
+						CreatedOnToolsVersion = 12.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A19C4BDD1F92C57D00A25342;
+					};
 					A19C4BDD1F92C57D00A25342 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1130;
@@ -359,11 +414,19 @@
 			projectRoot = "";
 			targets = (
 				A19C4BDD1F92C57D00A25342 /* Carangas */,
+				98CCBDB72542470A00B3E7C0 /* CarangasTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		98CCBDB62542470A00B3E7C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A19C4BDC1F92C57D00A25342 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,6 +442,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		98CCBDB42542470A00B3E7C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CCBDBB2542470A00B3E7C0 /* CarangasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A19C4BDA1F92C57D00A25342 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,6 +479,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		98CCBDBE2542470A00B3E7C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19C4BDD1F92C57D00A25342 /* Carangas */;
+			targetProxy = 98CCBDBD2542470A00B3E7C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		A19C4BEA1F92C57D00A25342 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -420,6 +499,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		98CCBDBF2542470A00B3E7C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarangasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.hitg.CarangasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carangas.app/Carangas";
+			};
+			name = Debug;
+		};
+		98CCBDC02542470A00B3E7C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarangasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.hitg.CarangasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carangas.app/Carangas";
+			};
+			name = Release;
+		};
 		A19C4BEE1F92C57D00A25342 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -564,6 +682,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		98CCBDC12542470A00B3E7C0 /* Build configuration list for PBXNativeTarget "CarangasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CCBDBF2542470A00B3E7C0 /* Debug */,
+				98CCBDC02542470A00B3E7C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A19C4BD91F92C57D00A25342 /* Build configuration list for PBXProject "Carangas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
