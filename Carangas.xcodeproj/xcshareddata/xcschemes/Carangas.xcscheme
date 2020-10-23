@@ -26,7 +26,39 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "98CCBE1225426A9800B3E7C0"
+            BuildableName = "CarangasSnapshotTests.xctest"
+            BlueprintName = "CarangasSnapshotTests"
+            ReferencedContainer = "container:Carangas.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "98CCBDB72542470A00B3E7C0"
+            BuildableName = "CarangasTests.xctest"
+            BlueprintName = "CarangasTests"
+            ReferencedContainer = "container:Carangas.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "98CCBDFE2542647200B3E7C0"
+            BuildableName = "CarangasUITests.xctest"
+            BlueprintName = "CarangasUITests"
+            ReferencedContainer = "container:Carangas.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A19C4BDD1F92C57D00A25342"
+            BuildableName = "Carangas.app"
+            BlueprintName = "Carangas"
+            ReferencedContainer = "container:Carangas.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
