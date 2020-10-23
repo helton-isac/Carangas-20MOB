@@ -113,3 +113,6 @@ class CarAPI {
     }
 }
 
+extension CarAPI : CarAPIProtocol {
+    
+}
