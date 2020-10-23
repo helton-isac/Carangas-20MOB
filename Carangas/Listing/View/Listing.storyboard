@@ -46,6 +46,9 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="CarsListTable"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="OK1-Ie-AaM" id="0gC-GG-RlU"/>
                             <outlet property="delegate" destination="OK1-Ie-AaM" id="uJg-WM-Mxb"/>

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2297F6162523ECEE00F89427 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F6152523ECEE00F89427 /* Car.swift */; };
 		2297F6182523EDE800F89427 /* CarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F6172523EDE800F89427 /* CarAPI.swift */; };
+		246AE6F3AC182C4ED4B530B8 /* Pods_Carangas_CarangasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E70941996D180C341CFF0F /* Pods_Carangas_CarangasUITests.framework */; };
+		52474A38DF71B7F9740930C1 /* Pods_CarangasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB492503CDA04356ED1DB5C6 /* Pods_CarangasTests.framework */; };
+		8458BF4FC6BCD484179EFB29 /* Pods_Carangas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3C20AD473A33686B90D6F8 /* Pods_Carangas.framework */; };
 		980B9F7B2539079200C2E3C7 /* Listing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980B9F7A2539079200C2E3C7 /* Listing.storyboard */; };
 		980B9F7E253907DD00C2E3C7 /* Form.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980B9F7D253907DD00C2E3C7 /* Form.storyboard */; };
 		980B9F812539081B00C2E3C7 /* Visualization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980B9F802539081B00C2E3C7 /* Visualization.storyboard */; };
@@ -34,12 +37,14 @@
 		98CCBDDC25425D0100B3E7C0 /* CarVisualizationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CCBDDB25425D0100B3E7C0 /* CarVisualizationViewControllerTests.swift */; };
 		98CCBDE3254261E100B3E7C0 /* CarAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CCBDE2254261E100B3E7C0 /* CarAPITests.swift */; };
 		98CCBE022542647200B3E7C0 /* CarangasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CCBE012542647200B3E7C0 /* CarangasUITests.swift */; };
+		98CCBE1625426A9800B3E7C0 /* CarangasSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CCBE1525426A9800B3E7C0 /* CarangasSnapshotTests.swift */; };
 		A16BA8671F953B940045AD32 /* CarFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BA8661F953B940045AD32 /* CarFormViewController.swift */; };
 		A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE11F92C57D00A25342 /* AppDelegate.swift */; };
 		A19C4BE41F92C57D00A25342 /* CarVisualizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE31F92C57D00A25342 /* CarVisualizationViewController.swift */; };
 		A19C4BE91F92C57D00A25342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19C4BE81F92C57D00A25342 /* Assets.xcassets */; };
 		A19C4BEC1F92C57D00A25342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C4BEA1F92C57D00A25342 /* LaunchScreen.storyboard */; };
 		A19C4BF81F92C99600A25342 /* CarsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BF71F92C99600A25342 /* CarsListingViewController.swift */; };
+		A4B9A7E5CBB3CEA1AD408532 /* Pods_CarangasSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865DB8E1270BB897387DC788 /* Pods_CarangasSnapshotTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +62,27 @@
 			remoteGlobalIDString = A19C4BDD1F92C57D00A25342;
 			remoteInfo = Carangas;
 		};
+		98CCBE1825426A9800B3E7C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A19C4BD61F92C57D00A25342 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A19C4BDD1F92C57D00A25342;
+			remoteInfo = Carangas;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06E70941996D180C341CFF0F /* Pods_Carangas_CarangasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carangas_CarangasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BDEE9710B5ED5C91559305F /* Pods-Carangas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carangas.release.xcconfig"; path = "Target Support Files/Pods-Carangas/Pods-Carangas.release.xcconfig"; sourceTree = "<group>"; };
+		1BE0C21CA28AE7A7B211B775 /* Pods-Carangas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carangas.debug.xcconfig"; path = "Target Support Files/Pods-Carangas/Pods-Carangas.debug.xcconfig"; sourceTree = "<group>"; };
+		1D3C20AD473A33686B90D6F8 /* Pods_Carangas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carangas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2297F6152523ECEE00F89427 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		2297F6172523EDE800F89427 /* CarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPI.swift; sourceTree = "<group>"; };
+		3279BC1D7082958E59806638 /* Pods-Carangas-CarangasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carangas-CarangasUITests.release.xcconfig"; path = "Target Support Files/Pods-Carangas-CarangasUITests/Pods-Carangas-CarangasUITests.release.xcconfig"; sourceTree = "<group>"; };
+		52DCB237E91DBC40505C7F53 /* Pods-CarangasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarangasTests.debug.xcconfig"; path = "Target Support Files/Pods-CarangasTests/Pods-CarangasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76D570D85077F9E6B9AD1B22 /* Pods-CarangasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarangasTests.release.xcconfig"; path = "Target Support Files/Pods-CarangasTests/Pods-CarangasTests.release.xcconfig"; sourceTree = "<group>"; };
+		865DB8E1270BB897387DC788 /* Pods_CarangasSnapshotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarangasSnapshotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92499156490E7E7736712A09 /* Pods-CarangasSnapshotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarangasSnapshotTests.release.xcconfig"; path = "Target Support Files/Pods-CarangasSnapshotTests/Pods-CarangasSnapshotTests.release.xcconfig"; sourceTree = "<group>"; };
 		980B9F7A2539079200C2E3C7 /* Listing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Listing.storyboard; sourceTree = "<group>"; };
 		980B9F7D253907DD00C2E3C7 /* Form.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Form.storyboard; sourceTree = "<group>"; };
 		980B9F802539081B00C2E3C7 /* Visualization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Visualization.storyboard; sourceTree = "<group>"; };
@@ -91,6 +112,9 @@
 		98CCBDFF2542647200B3E7C0 /* CarangasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarangasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CCBE012542647200B3E7C0 /* CarangasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarangasUITests.swift; sourceTree = "<group>"; };
 		98CCBE032542647200B3E7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98CCBE1325426A9800B3E7C0 /* CarangasSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarangasSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CCBE1525426A9800B3E7C0 /* CarangasSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarangasSnapshotTests.swift; sourceTree = "<group>"; };
+		98CCBE1725426A9800B3E7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A16BA8661F953B940045AD32 /* CarFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFormViewController.swift; sourceTree = "<group>"; };
 		A19C4BDE1F92C57D00A25342 /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19C4BE11F92C57D00A25342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +123,9 @@
 		A19C4BEB1F92C57D00A25342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19C4BED1F92C57D00A25342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A19C4BF71F92C99600A25342 /* CarsListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListingViewController.swift; sourceTree = "<group>"; };
+		AABDFE0E3A016B04B7BE85E2 /* Pods-Carangas-CarangasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carangas-CarangasUITests.debug.xcconfig"; path = "Target Support Files/Pods-Carangas-CarangasUITests/Pods-Carangas-CarangasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB492503CDA04356ED1DB5C6 /* Pods_CarangasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarangasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C4B34137ED5ED4A1CF9C6A /* Pods-CarangasSnapshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarangasSnapshotTests.debug.xcconfig"; path = "Target Support Files/Pods-CarangasSnapshotTests/Pods-CarangasSnapshotTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52474A38DF71B7F9740930C1 /* Pods_CarangasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +141,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				246AE6F3AC182C4ED4B530B8 /* Pods_Carangas_CarangasUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CCBE1025426A9800B3E7C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B9A7E5CBB3CEA1AD408532 /* Pods_CarangasSnapshotTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8458BF4FC6BCD484179EFB29 /* Pods_Carangas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +267,17 @@
 				980B9F9225391F5B00C2E3C7 /* Formatter.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		92AB8EDA71612AAA9C340263 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D3C20AD473A33686B90D6F8 /* Pods_Carangas.framework */,
+				06E70941996D180C341CFF0F /* Pods_Carangas_CarangasUITests.framework */,
+				865DB8E1270BB897387DC788 /* Pods_CarangasSnapshotTests.framework */,
+				DB492503CDA04356ED1DB5C6 /* Pods_CarangasTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		980B9F73253906ED00C2E3C7 /* View */ = {
@@ -386,13 +435,25 @@
 			path = CarangasUITests;
 			sourceTree = "<group>";
 		};
+		98CCBE1425426A9800B3E7C0 /* CarangasSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				98CCBE1525426A9800B3E7C0 /* CarangasSnapshotTests.swift */,
+				98CCBE1725426A9800B3E7C0 /* Info.plist */,
+			);
+			path = CarangasSnapshotTests;
+			sourceTree = "<group>";
+		};
 		A19C4BD51F92C57D00A25342 = {
 			isa = PBXGroup;
 			children = (
 				A19C4BE01F92C57D00A25342 /* Carangas */,
 				98CCBDB92542470A00B3E7C0 /* CarangasTests */,
 				98CCBE002542647200B3E7C0 /* CarangasUITests */,
+				98CCBE1425426A9800B3E7C0 /* CarangasSnapshotTests */,
 				A19C4BDF1F92C57D00A25342 /* Products */,
+				B401059EC745640B5AF280C0 /* Pods */,
+				92AB8EDA71612AAA9C340263 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -402,6 +463,7 @@
 				A19C4BDE1F92C57D00A25342 /* Carangas.app */,
 				98CCBDB82542470A00B3E7C0 /* CarangasTests.xctest */,
 				98CCBDFF2542647200B3E7C0 /* CarangasUITests.xctest */,
+				98CCBE1325426A9800B3E7C0 /* CarangasSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -419,6 +481,22 @@
 			path = Carangas;
 			sourceTree = "<group>";
 		};
+		B401059EC745640B5AF280C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BE0C21CA28AE7A7B211B775 /* Pods-Carangas.debug.xcconfig */,
+				1BDEE9710B5ED5C91559305F /* Pods-Carangas.release.xcconfig */,
+				AABDFE0E3A016B04B7BE85E2 /* Pods-Carangas-CarangasUITests.debug.xcconfig */,
+				3279BC1D7082958E59806638 /* Pods-Carangas-CarangasUITests.release.xcconfig */,
+				F7C4B34137ED5ED4A1CF9C6A /* Pods-CarangasSnapshotTests.debug.xcconfig */,
+				92499156490E7E7736712A09 /* Pods-CarangasSnapshotTests.release.xcconfig */,
+				52DCB237E91DBC40505C7F53 /* Pods-CarangasTests.debug.xcconfig */,
+				76D570D85077F9E6B9AD1B22 /* Pods-CarangasTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,6 +504,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98CCBDC12542470A00B3E7C0 /* Build configuration list for PBXNativeTarget "CarangasTests" */;
 			buildPhases = (
+				B7B27F1621CC69D0E1A46674 /* [CP] Check Pods Manifest.lock */,
 				98CCBDB42542470A00B3E7C0 /* Sources */,
 				98CCBDB52542470A00B3E7C0 /* Frameworks */,
 				98CCBDB62542470A00B3E7C0 /* Resources */,
@@ -444,6 +523,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98CCBE062542647200B3E7C0 /* Build configuration list for PBXNativeTarget "CarangasUITests" */;
 			buildPhases = (
+				08A1C55D5EAC96AE078B09E1 /* [CP] Check Pods Manifest.lock */,
 				98CCBDFB2542647200B3E7C0 /* Sources */,
 				98CCBDFC2542647200B3E7C0 /* Frameworks */,
 				98CCBDFD2542647200B3E7C0 /* Resources */,
@@ -458,10 +538,31 @@
 			productReference = 98CCBDFF2542647200B3E7C0 /* CarangasUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		98CCBE1225426A9800B3E7C0 /* CarangasSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CCBE1A25426A9800B3E7C0 /* Build configuration list for PBXNativeTarget "CarangasSnapshotTests" */;
+			buildPhases = (
+				E9ED41E6AC74F78C532C510F /* [CP] Check Pods Manifest.lock */,
+				98CCBE0F25426A9800B3E7C0 /* Sources */,
+				98CCBE1025426A9800B3E7C0 /* Frameworks */,
+				98CCBE1125426A9800B3E7C0 /* Resources */,
+				CC4B4C5355AD8F7BADF967D7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98CCBE1925426A9800B3E7C0 /* PBXTargetDependency */,
+			);
+			name = CarangasSnapshotTests;
+			productName = CarangasSnapshotTests;
+			productReference = 98CCBE1325426A9800B3E7C0 /* CarangasSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A19C4BDD1F92C57D00A25342 /* Carangas */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19C4BF01F92C57D00A25342 /* Build configuration list for PBXNativeTarget "Carangas" */;
 			buildPhases = (
+				A5FF21C9FA8EF36BF65BFA0E /* [CP] Check Pods Manifest.lock */,
 				A19C4BDA1F92C57D00A25342 /* Sources */,
 				A19C4BDB1F92C57D00A25342 /* Frameworks */,
 				A19C4BDC1F92C57D00A25342 /* Resources */,
@@ -495,6 +596,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = A19C4BDD1F92C57D00A25342;
 					};
+					98CCBE1225426A9800B3E7C0 = {
+						CreatedOnToolsVersion = 12.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A19C4BDD1F92C57D00A25342;
+					};
 					A19C4BDD1F92C57D00A25342 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1130;
@@ -518,6 +624,7 @@
 				A19C4BDD1F92C57D00A25342 /* Carangas */,
 				98CCBDB72542470A00B3E7C0 /* CarangasTests */,
 				98CCBDFE2542647200B3E7C0 /* CarangasUITests */,
+				98CCBE1225426A9800B3E7C0 /* CarangasSnapshotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -538,6 +645,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98CCBE1125426A9800B3E7C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A19C4BDC1F92C57D00A25342 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,6 +665,115 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08A1C55D5EAC96AE078B09E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carangas-CarangasUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5FF21C9FA8EF36BF65BFA0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carangas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7B27F1621CC69D0E1A46674 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarangasTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC4B4C5355AD8F7BADF967D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarangasSnapshotTests/Pods-CarangasSnapshotTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarangasSnapshotTests/Pods-CarangasSnapshotTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9ED41E6AC74F78C532C510F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarangasSnapshotTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98CCBDB42542470A00B3E7C0 /* Sources */ = {
@@ -570,6 +793,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				98CCBE022542647200B3E7C0 /* CarangasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CCBE0F25426A9800B3E7C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CCBE1625426A9800B3E7C0 /* CarangasSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +845,11 @@
 			target = A19C4BDD1F92C57D00A25342 /* Carangas */;
 			targetProxy = 98CCBE042542647200B3E7C0 /* PBXContainerItemProxy */;
 		};
+		98CCBE1925426A9800B3E7C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A19C4BDD1F92C57D00A25342 /* Carangas */;
+			targetProxy = 98CCBE1825426A9800B3E7C0 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -630,6 +866,7 @@
 /* Begin XCBuildConfiguration section */
 		98CCBDBF2542470A00B3E7C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52DCB237E91DBC40505C7F53 /* Pods-CarangasTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -650,6 +887,7 @@
 		};
 		98CCBDC02542470A00B3E7C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D570D85077F9E6B9AD1B22 /* Pods-CarangasTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -669,6 +907,7 @@
 		};
 		98CCBE072542647200B3E7C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AABDFE0E3A016B04B7BE85E2 /* Pods-Carangas-CarangasUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -688,6 +927,7 @@
 		};
 		98CCBE082542647200B3E7C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3279BC1D7082958E59806638 /* Pods-Carangas-CarangasUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -701,6 +941,47 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Carangas;
+			};
+			name = Release;
+		};
+		98CCBE1B25426A9800B3E7C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C4B34137ED5ED4A1CF9C6A /* Pods-CarangasSnapshotTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarangasSnapshotTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.hitg.CarangasSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carangas.app/Carangas";
+			};
+			name = Debug;
+		};
+		98CCBE1C25426A9800B3E7C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92499156490E7E7736712A09 /* Pods-CarangasSnapshotTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CarangasSnapshotTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.hitg.CarangasSnapshotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carangas.app/Carangas";
 			};
 			name = Release;
 		};
@@ -817,6 +1098,7 @@
 		};
 		A19C4BF11F92C57D00A25342 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE0C21CA28AE7A7B211B775 /* Pods-Carangas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -832,6 +1114,7 @@
 		};
 		A19C4BF21F92C57D00A25342 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDEE9710B5ED5C91559305F /* Pods-Carangas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -862,6 +1145,15 @@
 			buildConfigurations = (
 				98CCBE072542647200B3E7C0 /* Debug */,
 				98CCBE082542647200B3E7C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98CCBE1A25426A9800B3E7C0 /* Build configuration list for PBXNativeTarget "CarangasSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CCBE1B25426A9800B3E7C0 /* Debug */,
+				98CCBE1C25426A9800B3E7C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

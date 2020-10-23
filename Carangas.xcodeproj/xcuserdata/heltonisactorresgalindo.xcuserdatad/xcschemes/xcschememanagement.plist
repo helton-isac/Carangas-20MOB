@@ -7,7 +7,30 @@
 		<key>Carangas.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>98CCBDB72542470A00B3E7C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98CCBDFE2542647200B3E7C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98CCBE1225426A9800B3E7C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A19C4BDD1F92C57D00A25342</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

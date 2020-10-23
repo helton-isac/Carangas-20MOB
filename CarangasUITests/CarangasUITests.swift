@@ -24,6 +24,20 @@ class CarangasUITests: XCTestCase {
     }
 
     func testExample() throws {
-
+        // Given
+        let app = XCUIApplication()
+        app.launch()
+        
+        // When
+        let cell = app.tables["CarsListTable"].cells.firstMatch
+        XCTAssertTrue(cell.waitForExistence(timeout: 5.0))
+        
+        let cellTitleLabelText = cell.staticTexts["carsCellTitle"].label
+        XCTAssertFalse(cellTitleLabelText.isEmpty)
+        
+        cell.tap()
+        
+        // Then
+        XCTAssertTrue(app.navigationBars[cellTitleLabelText].exists)
     }
 }
