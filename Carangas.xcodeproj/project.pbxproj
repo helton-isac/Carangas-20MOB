@@ -32,6 +32,7 @@
 		98CCBDD325424DD000B3E7C0 /* CarAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CCBDD225424DCF00B3E7C0 /* CarAPIProtocol.swift */; };
 		98CCBDD72542506800B3E7C0 /* CarsMocked.json in Resources */ = {isa = PBXBuildFile; fileRef = 98CCBDD62542506800B3E7C0 /* CarsMocked.json */; };
 		98CCBDDC25425D0100B3E7C0 /* CarVisualizationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CCBDDB25425D0100B3E7C0 /* CarVisualizationViewControllerTests.swift */; };
+		98CCBDE3254261E100B3E7C0 /* CarAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CCBDE2254261E100B3E7C0 /* CarAPITests.swift */; };
 		A16BA8671F953B940045AD32 /* CarFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BA8661F953B940045AD32 /* CarFormViewController.swift */; };
 		A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE11F92C57D00A25342 /* AppDelegate.swift */; };
 		A19C4BE41F92C57D00A25342 /* CarVisualizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE31F92C57D00A25342 /* CarVisualizationViewController.swift */; };
@@ -78,6 +79,7 @@
 		98CCBDD225424DCF00B3E7C0 /* CarAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPIProtocol.swift; sourceTree = "<group>"; };
 		98CCBDD62542506800B3E7C0 /* CarsMocked.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CarsMocked.json; sourceTree = "<group>"; };
 		98CCBDDB25425D0100B3E7C0 /* CarVisualizationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisualizationViewControllerTests.swift; sourceTree = "<group>"; };
+		98CCBDE2254261E100B3E7C0 /* CarAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPITests.swift; sourceTree = "<group>"; };
 		A16BA8661F953B940045AD32 /* CarFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFormViewController.swift; sourceTree = "<group>"; };
 		A19C4BDE1F92C57D00A25342 /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19C4BE11F92C57D00A25342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 		98CCBDB92542470A00B3E7C0 /* CarangasTests */ = {
 			isa = PBXGroup;
 			children = (
+				98CCBDE1254261BD00B3E7C0 /* Service */,
 				98CCBDDA25425CC900B3E7C0 /* Visualization */,
 				98CCBDCB25424D4100B3E7C0 /* Stubs */,
 				98CCBDC425424A0600B3E7C0 /* Listing */,
@@ -346,6 +349,14 @@
 				98CCBDDB25425D0100B3E7C0 /* CarVisualizationViewControllerTests.swift */,
 			);
 			path = Visualization;
+			sourceTree = "<group>";
+		};
+		98CCBDE1254261BD00B3E7C0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				98CCBDE2254261E100B3E7C0 /* CarAPITests.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		A19C4BD51F92C57D00A25342 = {
@@ -488,6 +499,7 @@
 			files = (
 				98CCBDC625424A6000B3E7C0 /* CarsListingViewModelTests.swift in Sources */,
 				98CCBDCD25424D5800B3E7C0 /* CarAPIStub.swift in Sources */,
+				98CCBDE3254261E100B3E7C0 /* CarAPITests.swift in Sources */,
 				98CCBDDC25425D0100B3E7C0 /* CarVisualizationViewControllerTests.swift in Sources */,
 				98CCBDBB2542470A00B3E7C0 /* CarangasTests.swift in Sources */,
 			);
