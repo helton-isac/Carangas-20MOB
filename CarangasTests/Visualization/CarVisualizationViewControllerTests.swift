@@ -43,7 +43,7 @@ class CarVisualizationViewControllerTests: XCTestCase {
         // Then
         XCTAssertEqual(sut.title, "Civic", "Titulo da Controller Errado")
         XCTAssertEqual(sut.lbBrand.text, "Marca: Honda")
-        XCTAssertEqual(sut.lbPrice.text, "Preço: R$ 25.000,00")
+        XCTAssertEqual(sut.lbPrice.text, "Preço: R$ 25.000,00")
         XCTAssertEqual(sut.lbGasType.text, "Combustível: Flex")
         
     }
