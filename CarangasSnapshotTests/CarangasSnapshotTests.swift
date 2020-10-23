@@ -27,6 +27,7 @@ class CarangasSnapshotTests: FBSnapshotTestCase {
         
         recordMode = false
         fileNameOptions = [.device, .screenSize, .OS]
+        usesDrawViewHierarchyInRect = true
         
         sut = CarVisualizationViewController.instantiateFromStoryboard(.visualization)
     }
